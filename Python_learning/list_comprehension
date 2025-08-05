@@ -1,0 +1,38 @@
+number_list = [1,2,3,4,5,6,7,8,9,10] # from this list we need to make a list with only even numbers
+
+# 1st method is with our normal for loop
+
+# new_list = []
+
+# for number in number_list:
+#     if number%2 == 0:
+#         new_list.append(number)
+
+# print(f'new list with even entries {new_list}')
+
+# 2nd method--> whenever we require a new list as an output we can list comprehension method
+
+## syntax of list comprehension when there is only if condition in solving problem
+
+### general syntax--> new_lsit_variable_name + [output for loop if condition], output at the front is output of if condition
+
+# new_list = [number for number in number_list if number%2==0]
+
+# print(new_list)
+
+
+# new_list = []
+
+# for number in number_list:
+#     if number%2 == 0:
+#         new_list.append("even")
+#     else:
+#         new_list.append("odd")
+
+# print(new_list)
+
+# or
+
+new_list = ["even" if i%2==0 else "odd" for i in range(1,11)] # if we have if else condition this how we write list comprehension. The output is typed before the respective condition
+
+print(new_list)

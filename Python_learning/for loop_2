@@ -1,0 +1,70 @@
+
+paragraph = """ Ralph Kimball founded the Kimball Group. Since the mid-1980s, he has been the 
+data warehouse and business intelligence industry’s thought leader on the dimen
+sional approach. He has educated tens of thousands of IT professionals. The Toolkit 
+books written by Ralph and his colleagues have been the industry’s best sellers 
+since 1996. Prior to working at Metaphor and founding Red Brick Systems, Ralph 
+coinvented the Star workstation, the fi rst commercial product with windows, icons, 
+and a mouse, at Xerox’s Palo Alto Research Center (PARC). Ralph has a PhD in 
+electrical engineering from Stanford University """
+
+paragraph_list = paragraph.lower().split(" ")
+print(type(paragraph_list[4]))
+
+# count = []
+# for i in range(len(paragraph_list)):
+#     if paragraph_list[i] == "the":
+#         count.append(i)
+
+# print(len(count))
+
+# or 
+
+# count = 0
+
+# for letter in paragraph_list:
+#     if letter == "the":
+#         count += 1
+
+#     else:
+#         continue
+
+# print(f'total repetition is {count}') # so here we're getting output 7 instaed 8 because of the differnc in case sensitive issue "the" vs "The"
+                                        # inorder to solve this thing, it is better to convert it into fully lower or upper case
+
+# --------------------------------------------------------------------------------------------
+
+# Q) I have a sorted list and need to insert the new value in such a way that after inserting the element list will be sorted
+
+# list = [5,18,77,108,930]
+
+# number_to_insert = 55
+
+# for i in range(len(list)):
+#     if list[i] < number_to_insert:
+#         continue
+#     else:
+#         list.insert(i,number_to_insert)
+#         break
+
+# print(list)
+
+# --------------------------------------------------------------------------------------------------
+
+# lst = [202,165,89,76,12]
+
+# number_to_insert = 15
+
+# for i in range(len(lst)):
+#     print(i)
+#     if number_to_insert < lst[i]:
+#         continue
+#     else:
+#         lst.insert(i,15)
+#         break
+# print(lst)
+
+        
+
+
+
